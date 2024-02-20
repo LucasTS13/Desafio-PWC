@@ -20,3 +20,9 @@ const enderecos = [
     "Cambuí 804B"
     //No PDF a entrada e saída do Cambuí está diferente, irei utilizar este exemplo da entrada
 ];
+
+//Passando os elementos de "enderecos" pela função e imprimindo o que retornar em formato de string pelo uso do join
+enderecos.forEach(item => {
+    const endereco = separarEndereco(item);
+    console.log(`${endereco.join(", ")}`);
+});
