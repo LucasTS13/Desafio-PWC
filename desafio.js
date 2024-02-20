@@ -1,6 +1,4 @@
-// Para os casos mais complicados precisei apenas alterar a expressão regular para capturar os numeros das ruas
 function separarEndereco(endereco) {
-    // Número da rua (\d+\w*\s*\w*): Agora permite uma sequencia de digitos seguida por um ou mais espaços seguida por um ou mais alfanumericos
     const regex = /([^\d]+) (\d+\s*\w*)/;
     const aux = endereco.match(regex);
     if (aux) {
@@ -16,7 +14,11 @@ const enderecos = [
     "Babaçu 500",
     "Cambuí 804B",
     "Rio Branco 23",
-    "Quirino dos Santos 23 b"
+    "Quirino dos Santos 23 b",
+    "4, Rue de la République",
+    "100 Broadway Av",
+    "Calle Sagasta, 26",
+    "Calle 44 No 1991"
 ];
 
 enderecos.forEach(item => {
